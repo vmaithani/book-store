@@ -29,7 +29,7 @@ PUT - http://localhost:3000/api/books/:id
 DELETE - http://localhost:3000/api/books/:id
 
 
-SET UP - 
+# SET UP - 
 Install mongoDB -- 
 add mongodb://localhost/bookstore - as DB.
 
