@@ -33,7 +33,7 @@ app.get('/api/books', (req, res) => {
             res.json(books);
         })
         .catch(err => {
-            res.status(500).send('Error fetching books');
+            res.status(500).send('Error fetching books - Argument passed in must be a string of 12 bytes ');
         });
 });
 
@@ -49,7 +49,7 @@ app.get('/api/books/:id', (req, res) => {
             }
         })
         .catch(err => {
-            res.status(500).send('Error fetching book');
+            res.status(500).send('Error fetching book - Argument passed in must be a string of 12 bytes ');
         });
 });
 
@@ -67,7 +67,7 @@ app.put('/api/books/:id', (req, res) => {
             }
         })
         .catch(err => {
-            res.status(500).send('Error updating book');
+            res.status(500).send('Error updating book - Argument passed in must be a string of 12 bytes ');
         });
 });
 
@@ -84,7 +84,6 @@ app.delete('/api/books/:id', (req, res) => {
             }
         })
         .catch(err => {
-            console.log(err , "eror")
             res.status(500).send('Error deleting book - Argument passed in must be a string of 12 bytes ');
         });
 });
